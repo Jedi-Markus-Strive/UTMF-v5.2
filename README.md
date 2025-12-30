@@ -95,6 +95,14 @@ For licensing and size reasons, raw data are **not bundled** in this repository.
 
 Mount your Google Drive, place the datasets in `/Datasets_UTMF/Datasets/`,
 run the UTMF cell, and results will be written to `/Datasets_UTMF/UTMF_outputs/`.
+UTMF v5.2 is designed to be executed as a single notebook cell.
+Running the cell from top to bottom performs the full analysis.
+
+A full UTMF v5.2 run may take 10 minutes to several hours depending on hardware and 
+selected datasets.
+
+Tested in Google Colab (Python 3.10).
+Local execution may require manual dependency resolution.
 
 ---
 

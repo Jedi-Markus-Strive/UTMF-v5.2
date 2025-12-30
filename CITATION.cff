@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+
+message: >
+  If you use UTMF v5.2 in academic work, please cite this software
+  and the associated Zenodo record.
+
+title: "UTMF v5.2: Unified Temporal–Measurement Framework with Adaptive Subset Multifractal Analysis"
+
+version: "5.2"
+
+date-released: 2025-01-01
+
+authors:
+  - family-names: Strive
+    given-names: Jedi Markus
+    affiliation: Independent Researcher
+    email: "crisplatform@gmail.com"
+    orcid: "0009-0000-7663-7946"
+
+repository-code: "https://github.com/Jedi-Markus-Strive/UTMF-v5.2"
+
+keywords:
+  - multifractal analysis
+  - MFDFA
+  - time series analysis
+  - complex systems
+  - reproducible research
+  - adaptive subsets
+  - coherence indices
+
+license: MIT
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Strive
+      given-names: Jedi Markus
+  title: "UTMF v5.2: Unified Temporal–Measurement Framework with Adaptive Subset Multifractal Analysis"
+  version: "5.2"
+  year: 2025
+  publisher: Zenodo
+  doi: 10.5281/zenodo.XXXXXXX

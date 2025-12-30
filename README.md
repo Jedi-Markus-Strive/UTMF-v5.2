@@ -118,7 +118,7 @@ Workflow:
 
 The original UTMF v5.2 run used publicly available datasets from a range of experiments and surveys. For licensing and size reasons, the raw data are **not** bundled in this repository.
 
-## **All datasets used for UTMF v5.2 run listed below.** (Total 11.2GB) 
+## **All datasets used for UTMF v5.2 listed below.** (Total 11.2GB) 
 #### - Direct downloadlinks.
 #### - For Colab: Create: /MyDrive/Datasets_UTMF/UTMF_outputs/
 #### - Place the datasets in folder: /Datasets_UTMF/
@@ -161,14 +161,13 @@ The original UTMF v5.2 run used publicly available datasets from a range of expe
   CSV spectra 
   
   **Dataset used in UTMF v5.2 configuration:**                                                                        
-- `NIST_elements` [Download](https://github.com/Jedi-Markus-Strive/UTMF-v5.1-Coherence/raw/refs/heads/main/downloads/NIST_elements.zip)** (3.3MB) (Complete dataset as used in UTMF v5.0, unzip and use the CSV
-(17.4MB) for UTMF analysis.)
+- `NIST_elements` [Download](https://github.com/Jedi-Markus-Strive/UTMF-v5.1-Coherence/raw/refs/heads/master/downloads/NIST_elements.zip)** (8.5MB) (Complete dataset as used in UTMF v5.2, unzip and use the CSV's (57.5MB) for UTMF analysis.)
 ---
 - **[NANOGrav Data Releases](https://zenodo.org/records/16051178)**  
 - Pulsar timing residuals (e.g., `NG15yr narrowband` files).
 
   **Dataset used in UTMF v5.2 configuration:**
-- `NANOGrav15yr_PulsarTiming_v2.1.0` [Download:](https://zenodo.org/records/16051178/files/NANOGrav15yr_PulsarTiming_v2.1.0.tar.gz?download=1) (639MB) ([Unzip](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/prepare_NANOGrav_15yr_data.ipynb) the file, use for UTMF analysis.)
+- `NANOGrav15yr_PulsarTiming_v2.1.0` [Download:](https://zenodo.org/records/16051178/files/NANOGrav15yr_PulsarTiming_v2.1.0.tar.gz?download=1) (639MB) ([Unzip](https://github.com/Jedi-Markus-Strive/UTMF-v5.1-Coherence/blob/master/downloads/prepare_NANOGrav_15yr_data.ipynb) the file, use for UTMF analysis.)
 ---
 - **[Gaia Archive (DR3)](https://vizier.cds.unistra.fr/viz-bin/VizieR-4)**  
   Source catalogs in TSV format (e.g., `gaia_dr3.tsv`).                                                                 

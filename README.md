@@ -42,6 +42,19 @@ UTMF itself prioritizes **clarity over abstraction**.
 
 ---
 
+## Methodological lineage
+
+This work is part of a reproducible multifractal measurement framework:
+
+- jedi_mfdfa (MFDFA reference implementation)
+- UTMF-Core (domain-agnostic measurement framework)
+- UTMF v5.x (execution & validation environment)
+- FAT (derived asymmetry observables)
+
+Each component is archived on Zenodo with a persistent DOI.
+
+---
+
 ## What Is Included
 
 This repository contains:

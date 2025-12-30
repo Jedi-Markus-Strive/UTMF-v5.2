@@ -75,37 +75,6 @@ in dedicated work.
 
 ---
 
-## Dataset Download Information (UTMF v5.2)
-
-The UTMF v5.2 runs analysed in the accompanying paper use publicly available datasets
-from multiple physical domains.
-For licensing and size reasons, raw data are **not bundled** in this repository.
-
-**Total raw data volume:** approximately 12 GB
-
-### Recommended folder structure (Google Colab)
-
-```
-/MyDrive/
-└── Datasets_UTMF/
-    ├── Datasets/
-    └── UTMF_outputs/
-```
-
-
-Mount your Google Drive, place the datasets in `/Datasets_UTMF/Datasets/`,
-run the UTMF cell, and results will be written to `/Datasets_UTMF/UTMF_outputs/`.
-UTMF v5.2 is designed to be executed as a single notebook cell.
-Running the cell from top to bottom performs the full analysis.
-
-A full UTMF v5.2 run may take 10 minutes to several hours depending on hardware and 
-selected datasets.
-
-Tested in Google Colab (Python 3.10).
-Local execution may require manual dependency resolution.
-
----
-
 ## 5. Dataset Download Information (UTMF v5.2)
 
 UTMF v5.2 operates on publicly available datasets drawn from a wide range of
@@ -115,6 +84,15 @@ physical experiments and surveys. For licensing, size, and provenance reasons,
 UTMF v5.2 is designed such that datasets are loaded externally, while all
 measurement results, configuration parameters, subset strategies, and
 multifractal outputs are archived internally in fully reproducible JSON files.
+
+UTMF v5.2 is designed to be executed as a single notebook cell.
+Running the cell from top to bottom performs the full analysis.
+
+A full UTMF v5.2 run may take 10 minutes to several hours depending on hardware and 
+selected datasets.
+
+Tested in Google Colab (Python 3.10).
+Local execution may require manual dependency resolution.
 
 ---
 
@@ -136,154 +114,75 @@ Workflow:
 
 ---
 
-## Supported datasets
+## 5. Dataset Download Information
 
-### **LIGO — Gravitational Wave Open Science Center (GWOSC)**
+The original UTMF v5.2 run used publicly available datasets from a range of experiments and surveys. For licensing and size reasons, the raw data are **not** bundled in this repository.
 
-Strain data from observing run O4a (16 kHz sampling).
-
-* File format: HDF5
-* Example filenames: `L-L1_GWOSC_O4a_16KHZ_R1-*.hdf5`
-
-Archive:
-[https://gwosc.org/archive/links/O4a_16KHZ_R1/L1/1368195220/1389456018/simple/](https://gwosc.org/archive/links/O4a_16KHZ_R1/L1/1368195220/1389456018/simple/)
-
-**Example datasets used in UTMF v5.x configurations:**
-
-* `L-L1_GWOSC_O4a_16KHZ_R1-1368350720-4096.hdf5` (486 MB)
-* `L-L1_GWOSC_O4a_16KHZ_R1-1370202112-4096.hdf5` (486 MB)
-* `L-L1_GWOSC_O4a_16KHZ_R1-1384779776-4096.hdf5` (486 MB)
-* `L-L1_GWOSC_O4a_16KHZ_R1-1389420544-4096.hdf5` (486 MB)
-
+## **All datasets used for UTMF v5.2 run listed below.** (Total 11.2GB) 
+#### - Direct downloadlinks.
+#### - For Colab: Create: /MyDrive/Datasets_UTMF/UTMF_outputs/
+#### - Place the datasets in folder: /Datasets_UTMF/
+#### - Mount Drive
+#### - Run UTMF v5.2
+#### - Results are returned in folder: /UTMF_outputs/
+-----
+- **[LIGO – GWOSC](https://gwosc.org/archive/links/O4a_16KHZ_R1/L1/1368195220/1389456018/simple/)**  
+  HDF5 strain files (e.g., `L-L1_GWOSC_O4a_16KHZ_R1-*.hdf5`).
+                                                           
+  **Datasets used in UTMF v5.2 configuration:**
+- `L-L1_GWOSC_O4a_16KHZ_R1-1384779776-4096.hdf5` [Download](https://gwosc.org/archive/data/O4a_16KHZ_R1/1384120320/L-L1_GWOSC_O4a_16KHZ_R1-1384779776-4096.hdf5) (486MB)
+- `L-L1_GWOSC_O4a_16KHZ_R1-1368350720-4096.hdf5` [Download](https://gwosc.org/archive/data/O4a_16KHZ_R1/1367343104/L-L1_GWOSC_O4a_16KHZ_R1-1368350720-4096.hdf5) (486MB)
+- `L-L1_GWOSC_O4a_16KHZ_R1-1370202112-4096.hdf5` [Download](https://gwosc.org/archive/data/O4a_16KHZ_R1/1369440256/L-L1_GWOSC_O4a_16KHZ_R1-1370202112-4096.hdf5) (486MB)
+- `L-L1_GWOSC_O4a_16KHZ_R1-1389420544-4096.hdf5` [Download](https://gwosc.org/archive/data/O4a_16KHZ_R1/1389363200/L-L1_GWOSC_O4a_16KHZ_R1-1389420544-4096.hdf5) (486MB)
 ---
+- **[Planck – ESA Archive](https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/)**  
+  FITS CMB maps (e.g., SMICA IQU maps such as `COM_CMB_IQU-smica_2048_R3.00_full.fits`).
 
-### **Planck — ESA Legacy Archive**
-
-Cosmic Microwave Background (CMB) sky maps.
-
-* File format: FITS
-* Typical products: SMICA IQU component maps
-
-Archive:
-[https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/](https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/)
-
-**Example datasets used in UTMF v5.x:**
-
-* `COM_CMB_IQU-smica-nosz_2048_R3.00_full.fits` (384 MB)
-* `COM_CMB_IQU-smica_2048_R3.00_full.fits` (1.88 GB)
-* `LFI_SkyMap_070_1024_R3.00_full.fits` (480 MB)
-
+  **Datasets used in UTMF v5.2 configuration:**
+- `COM_CMB_IQU-smica-nosz_2048_R3.00_full.fits` [Download](https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/COM_CMB_IQU-smica-nosz_2048_R3.00_full.fits) (384MB)
+- `COM_CMB_IQU-smica_2048_R3.00_full.fits`      [Download](https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/component-maps/cmb/COM_CMB_IQU-smica_2048_R3.00_full.fits) (1.88GB)
+- `LFI_SkyMap_070_1024_R3.00_survey-1.fits`     [Download](https://irsa.ipac.caltech.edu/data/Planck/release_3/all-sky-maps/maps/LFI_SkyMap_070_1024_R3.00_full.fits) (480MB)
 ---
+- **[DESI – Data Release Portal](https://data.desi.lbl.gov/doc/releases/dr1/)**  
+  LRG FITS catalogs (e.g., `LRG_full.dat.fits`).
 
-### **DESI — Dark Energy Spectroscopic Instrument**
+  **Dataset used in UTMF v5.2 configuration:**
+- `LRG_full.dat.fits` [Download](https://data.desi.lbl.gov/public/dr1/survey/catalogs/dr1/LSS/iron/LSScats/v1.2/LRG_full.dat.fits) (2.77GB)
+---  
+- **[CERN Open Data](https://opendata.cern.ch/record/15007)**  
+  ROOT event files (e.g., `data_B.exactly2lep.root`).
 
-Large-scale structure catalogs.
-
-* File format: FITS
-* Example: luminous red galaxy (LRG) catalogs
-
-Portal:
-[https://data.desi.lbl.gov/doc/releases/dr1/](https://data.desi.lbl.gov/doc/releases/dr1/)
-
-**Dataset used in UTMF v5.x:**
-
-* `LRG_full.dat.fits` (2.77 GB)
-
+  **Dataset used in UTMF v5.2 configuration:**
+- `data_B.exactly2lep.root` [Download:](https://opendata.cern.ch/record/15007/files/data_B.exactly2lep.root) (451MB)
+                                                                                              
+    ➕ This repository includes a helpfile: `data_B.exactly2lep.h5` [Download:](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/Datasets/data_B.exactly2lep.h5) (315KB) (helpfile for .root, store it at the same location as .root-file.)
 ---
-
-### **CERN Open Data Portal**
-
-High-energy physics event data.
-
-* File format: ROOT
-* Example: dilepton event selections
-
-Portal:
-[https://opendata.cern.ch/record/15007](https://opendata.cern.ch/record/15007)
-
-**Dataset used in UTMF v5.x:**
-
-* `data_B.exactly2lep.root` (451 MB)
-
-A small helper file for ROOT-to-array conversion is provided:
-
-* `data_B.exactly2lep.h5` (315 KB)
-  Store this file alongside the ROOT file.
-
+- **[NIST Atomic Spectra Database](https://physics.nist.gov/PhysRefData/ASD/lines_form.html)**                          
+  CSV spectra 
+  
+  **Dataset used in UTMF v5.2 configuration:**                                                                        
+- `NIST_elements` [Download](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/Datasets/NIST_3.zip)** (3.3MB) (Complete dataset as used in UTMF v5.0, unzip and use the CSV
+(17.4MB) for UTMF analysis.)
 ---
+- **[NANOGrav Data Releases](https://zenodo.org/records/16051178)**  
+- Pulsar timing residuals (e.g., `NG15yr narrowband` files).
 
-### **NIST Atomic Spectra Database**
-
-Atomic emission spectra.
-
-* File format: CSV
-* Individual element spectra
-
-Database:
-[https://physics.nist.gov/PhysRefData/ASD/lines_form.html](https://physics.nist.gov/PhysRefData/ASD/lines_form.html)
-
-**Pre-packaged dataset used in UTMF:**
-
-* `NIST_elements`
-  Download:
-  [https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/Datasets/NIST_3.zip](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/Datasets/NIST_3.zip)
-
-Unzip and use the CSV files directly for UTMF analysis.
-
+  **Dataset used in UTMF v5.2 configuration:**
+- `NANOGrav15yr_PulsarTiming_v2.1.0` [Download:](https://zenodo.org/records/16051178/files/NANOGrav15yr_PulsarTiming_v2.1.0.tar.gz?download=1) (639MB) ([Unzip](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/prepare_NANOGrav_15yr_data.ipynb) the file, use for UTMF analysis.)
 ---
-
-### **NANOGrav Pulsar Timing Arrays**
-
-Pulsar timing residuals.
-
-* File format: timing residual files
-* Data release: 15-year narrowband set
-
-Zenodo archive:
-[https://zenodo.org/records/16051178](https://zenodo.org/records/16051178)
-
-**Dataset used in UTMF v5.x:**
-
-* `NANOGrav15yr_PulsarTiming_v2.1.0` (639 MB)
-
-Preparation notebook:
-[https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/prepare_NANOGrav_15yr_data.ipynb](https://github.com/Jedi-Markus-Strive/UTMF-CRISP/raw/refs/heads/main/prepare_NANOGrav_15yr_data.ipynb)
-
+- **[Gaia Archive (DR3)](https://vizier.cds.unistra.fr/viz-bin/VizieR-4)**  
+  Source catalogs in TSV format (e.g., `gaia_dr3.tsv`).                                                                 
+  **Dataset used in UTMF v5.2:**                                                                                      
+      **Select:**                                                                                                       
+        1- 'gaiadr3'                                                                                                   
+        2. Table: `I/355/gaiadr3`  
+        3. Rows: `1-999999`  
+        4. Format: Tab-Separated Values  
+        5. Columns: All                                                                                
+        6. Rename file to 'gaia_dr3' or update path in config.                                                          
 ---
-
-### **Gaia Archive (DR3)**
-
-Astrometric source catalogs.
-
-* File format: TSV
-* Query-based download
-
-Access via VizieR:
-[https://vizier.cds.unistra.fr/viz-bin/VizieR-4](https://vizier.cds.unistra.fr/viz-bin/VizieR-4)
-
-**Example query used in UTMF v5.x:**
-
-* Catalog: `I/355/gaiadr3`
-* Rows: `1–999999`
-* Format: TSV
-* Columns: All
-* Rename output file to `gaia_dr3` or update the path in the UTMF configuration.
-
----
-
-### **Quantum Random Number Generator (QRNG)**
-
-True quantum randomness.
-
-* Provider: Australian National University
-* Access: API-based
-* No local download required
-
-Website:
-[https://qrng.anu.edu.au/](https://qrng.anu.edu.au/)
-
-QRNG streams are incorporated directly in the UTMF configuration.
-
+- **[ANU Quantum Random Numbers (QRNG)](https://qrng.anu.edu.au/)**  
+  API-based quantum random sequences (no download required, incorporated in UTMF v5.2 configuration).
 ---
 
 ### Notes on UTMF v5.2 usage

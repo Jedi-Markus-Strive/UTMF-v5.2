@@ -24,6 +24,19 @@ without hidden tuning or domain-specific heuristics.
 
 ---
 
+## Accompanying paper
+
+This repository accompanies the paper  
+**Subset Design and Stability Regimes in Multifractal Detrended Fluctuation Analysis**  
+(M. Eversdijk, 2025)  
+DOI: https://doi.org/10.5281/zenodo.18098538
+
+The paper documents the empirical stability analysis of MFDFA performed with
+UTMF v5.2 and `jedi_mfdfa`. All results are fully reproducible from the
+archived metadata and scripts provided here and on Zenodo.
+
+---
+
 ## Design Philosophy
 
 UTMF v5.2 is intentionally simple.

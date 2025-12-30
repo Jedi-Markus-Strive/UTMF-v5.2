@@ -131,19 +131,6 @@ Local execution may require manual dependency resolution.
     └── UTMF_outputs/
 ```
 
-Workflow:
-
-1. Mount Google Drive
-2. Place downloaded datasets in `/Datasets_UTMF/Datasets/`
-3. Run the single UTMF v5.2 analysis cell
-4. Results are written to `/Datasets_UTMF/UTMF_outputs/`
-
----
-
-## 5. Dataset Download Information
-
-The original UTMF v5.2 run used publicly available datasets from a range of experiments and surveys. For licensing and size reasons, the raw data are **not** bundled in this repository.
-
 ## **All datasets used for UTMF v5.2 listed below.** (Total 11.2GB) 
 #### - Direct downloadlinks.
 #### - For Colab: Create: /MyDrive/Datasets_UTMF/UTMF_outputs/
